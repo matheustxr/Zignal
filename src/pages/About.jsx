@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <Particulas />
-      <div className='relative z-20 w-full h-full pb-16 px-3 flex justify-around'>
+      <div className='relative z-20 w-full h-full pb-16 px-3 flex justify-start bgTom'>
 
         <div className='max-768:w-11/12 w-1/2 h-max mt-5 p-6 rounded bg-black/50'>
           <h1 className='text-5xl'>Historia</h1>
@@ -16,7 +16,7 @@ function About() {
           </p>
         </div>
 
-        <img className='max-w-lg max-768:hidden' src="src/assets/imgTom1.webp" alt="" />
+        {/*<img className='max-w-lg max-768:hidden' src="src/assets/imgTom1.webp" alt="" />*/}
       </div>
     </>
   )

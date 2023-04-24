@@ -12,6 +12,16 @@ export default {
       screens: {
         'max-768': {'max': '768px'},
       },
+      width: {
+        '300': '300px',
+      },
+      height: {
+        '300': '300px',
+      },
+      maxWidth: {
+        '300': '300px',
+        '240': '240px',
+      }
     },
     plugins: [],
   }
