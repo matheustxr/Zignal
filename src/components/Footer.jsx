@@ -16,7 +16,7 @@ function Footer() {
             Redes sociais:
           </div>
           <div className='flex gap-3'>
-            <a className='w-7 h-7 flex items-center justify-center iconInsta' href="">
+            <a className='w-7 h-7 flex items-center justify-center rounded iconInsta' href="">
               <FontAwesomeIcon icon={faInstagram} size="lg" style={{color: "#ffffff",}} />
             </a>
 

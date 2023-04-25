@@ -13,7 +13,9 @@ export default {
         'max-768': {'max': '768px'},
       },
       width: {
+        '350': '350px',
         '300': '300px',
+        '150': '150px',
       },
       height: {
         '300': '300px',

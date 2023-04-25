@@ -11,8 +11,7 @@
 
 /* HOVER HEADER */
 .iconInsta:hover{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
-  border-radius: 4px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .borderBottomAnimation {
@@ -90,7 +89,7 @@
   position: absolute;
   top: 0;
   z-index: 30;
-  
+  transition: all 1s;
 }
 
 .hoverContent2{
@@ -100,10 +99,12 @@
   position: absolute;
   bottom: 0;
   z-index: 30;
+  transition: all 1s;
 }
 
 .content{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .hoverContent:hover .content{
@@ -115,16 +116,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
+  visibility: visible;
+  opacity: 1;
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
+  transition: opacity 0.4s ease-in;
 }
 
 .hoverContent2:hover .content{
   width: 300px;
   height: 300px;
   gap: 5px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
+  visibility: visible;
+  opacity: 1;
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
+  transition: opacity 0.4s ease-in;
 }
