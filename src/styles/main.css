@@ -9,11 +9,8 @@
   color: #fff;
 }
 
-/* HOVER HEADER */
-.iconInsta:hover{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
 
+/* HOVER HEADER */
 .borderBottomAnimation {
   display: inline-block;
   color: #ffffff;
@@ -32,6 +29,12 @@
 .borderBottomAnimation:hover::after {
   width: 100%;
   transition: width .2s;
+}
+
+
+/*ICON FOOTER INSTAGRAM*/
+.iconInsta:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 
@@ -81,7 +84,6 @@
 
 /*HOVER CONTENT*/
 
-
 .hoverContent{
   width: 350px;
   height: 300px;
@@ -107,7 +109,7 @@
   opacity: 0;
 }
 
-.hoverContent:hover .content{
+.hoverContent:hover .content,.hoverContent2:hover .content{
   width: 300px;
   height: 300px;
   display: flex;
@@ -122,18 +124,71 @@
   transition: opacity 0.4s ease-in;
 }
 
-.hoverContent2:hover .content{
-  width: 300px;
-  height: 300px;
-  gap: 5px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  visibility: visible;
-  opacity: 1;
-  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
-  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
-  transition: opacity 0.4s ease-in;
+
+/*MASK HOVER MOBILE*/
+@media only screen and (max-width:767px){
+  .hoverContentMobile{
+    width: 350px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 30;
+    transition: all 1s;
+  }
+  
+  .hoverContentMobile2{
+    width: 350px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 30;
+    transition: all 1s;
+  }
+
+  .hoverContentMobile .content, .hoverContentMobile2 .content{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    visibility: visible;
+    opacity: 1;
+    background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2) 100%);
+    transition: opacity 0.4s ease-in;
+  }
+  /*POSITION MAKS MOBILE*/
+  #over2.hoverContentMobile{
+    top: 18%;
+  }
+
+  #over3.hoverContentMobile{
+    top: 34.2%;
+  }
+
+  #over4.hoverContentMobile2{
+    top: 51.2%;
+  }
+
+  #over5.hoverContentMobile2{
+    top: 68.4%;
+  }
+}
+
+
+
+.lineTitle::after{
+  display: block;
+  content: '';
+  width: 8%;
+  height: 1px;
+  margin-top: 5px;
+  background: #ededed;
+  bottom: 0;
+  left: 0;
+  top: 58px;
 }

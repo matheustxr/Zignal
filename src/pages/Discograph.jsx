@@ -3,10 +3,10 @@ import Particulas from '../components/Particles';
 import $  from 'jquery';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDeezer, faInstagram, faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
+import { faDeezer, faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
 
 function Discograph() {
-
+  /*ANIMAÇÃO HOVER DESKTOP*/
   if( $(window).width() >= 768){
 
       /*ESPIRAL*/
@@ -123,16 +123,129 @@ function Discograph() {
       )
     });
   }
+  /*ANIMAÇÃO HOVER MOBILE*/
+  if( $(window).width() < 768){
+    /*ESPIRAL*/
+    $(function(){
+      $("#capaEspiral").on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $('#over1').addClass('hoverContentMobile')
+          $(this).addClass('animationDisc')
+        },
+      );
 
-  
+      $('#over1').on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $(this).removeClass('hoverContentMobile')
+          $('#capaEspiral').removeClass('animationDisc')
+        },
+      )
+    });
+
+    /*CAMLEAO*/
+    $(function(){
+      $("#capaCamaleao").on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $('#over2').addClass('hoverContentMobile')
+          $(this).addClass('animationDisc')
+        },
+      );
+
+      $('#over2').on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $(this).removeClass('hoverContentMobile')
+          $('#capaCamaleao').removeClass('animationDisc')
+        },
+      )
+    });
+
+    /*KOMBI*/
+    $(function(){
+      $("#capaKombi").on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $('#over3').addClass('hoverContentMobile')
+          $(this).addClass('animationDisc')
+        },
+      );
+
+      $('#over3').on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $(this).removeClass('hoverContentMobile')
+          $('#capaKombi').removeClass('animationDisc')
+        },
+      )
+    });
+
+    /*VERDE*/
+    $(function(){
+      $("#capaVerde").on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $('#over4').addClass('hoverContentMobile2')
+          $(this).addClass('animationDisc')
+        },
+      );
+
+      $('#over4').on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $(this).removeClass('hoverContentMobile2')
+          $('#capaVerde').removeClass('animationDisc')
+        },
+      )
+    });
+
+    /*COMPAIXAO*/
+    $(function(){
+      $("#capaCompaixao").on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $('#over5').addClass('hoverContentMobile2')
+          $(this).addClass('animationDisc')
+        },
+      );
+
+      $('#over5').on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $(this).removeClass('hoverContentMobile2')
+          $('#capaCompaixao').removeClass('animationDisc')
+        },
+      )
+    });
+
+    /*BANDA*/
+    $(function(){
+      $("#capaBanda").on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $('#over6').addClass('hoverContentMobile2')
+          $(this).addClass('animationDisc')
+        },
+      );
+
+      $('#over6').on('click',
+        function(){
+          //Ao posicionar o cursor sobre a div
+          $(this).removeClass('hoverContentMobile2')
+          $('#capaBanda').removeClass('animationDisc')
+        },
+      )
+    });
+  }
 
 
   return (
-    <div className='relative z-20 top-0 w-full h-100% py-14 px-24  max-768:px-12 '>
+    <div className='relative z-20 top-0 w-full h-100% py-14 px-24  max-768:px-6 '>
       <Particulas />
       <iframe className='relative z-30 rounded' src="https://open.spotify.com/embed/artist/40NZXK16OeiuQJ5ONPzLAN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-      
       <div className=' relative flex flex-wrap justify-around gap-y-12 mt-5 max-768:flex-col max-768:items-center w-full '>
         {/*ESPIRAL*/}
         <div className='w-350 '>
@@ -174,7 +287,7 @@ function Discograph() {
           </div>
 
           <span  className='w-300 h-300  '>
-            <div id='over2' className=' absolute'>
+            <div id='over2' className=' absolute '>
               <div  className="content">
                 <span className='text-base font-extrabold mb-2'>Metamorfose</span>
                 <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">

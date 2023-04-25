@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDeezer, faInstagram, faSpotify, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faDeezer, faInstagram, faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
 import { faMusic, faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
@@ -33,7 +33,7 @@ function Footer() {
             </a>
 
             <a className='w-7 h-7 flex items-center justify-center rounded hover:bg-[#fc1860]' href="">
-              <FontAwesomeIcon icon={faMusic} size="lg" style={{color: "#ffffff",}} />
+              <FontAwesomeIcon icon={faApple} size="xl" style={{color: "#ffffff",}} />
             </a>
 
             <a className='w-7 h-7 flex items-center justify-center rounded hover:bg-[#ff02a2]' href="">
