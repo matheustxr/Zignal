@@ -1,6 +1,7 @@
 import React from 'react'
 import Particulas from '../components/Particles';
 import $  from 'jquery';
+import capaEspiral from "../assets/albuns/capa-espiral.jpg"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDeezer, faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
@@ -250,7 +251,7 @@ function Discograph() {
         {/*ESPIRAL*/}
         <div className='w-350 '>
           <div id='capaEspiral'  >
-            <img className='w-300  absolute z-20 ' src="src/assets/albuns/capa-espiral.jpg" alt="" />
+            <img className='w-300  absolute z-20 ' src={capaEspiral} alt="" />
             <img id='vinil1' className='w-300 ' src="src/assets/vinil.png" alt="" />
           </div>
 
