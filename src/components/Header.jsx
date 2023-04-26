@@ -31,7 +31,7 @@ export default function Header() {
           <Navbar className='transparent navbar-expand-md navbar-dark' color="faded" light>
             <NavbarBrand href="/" className="me-auto">
               <Link to="/">
-                <img className='w-170' src="src/assets/Ativo 3.svg" alt="" />
+                <img className='w-170' src="../src/assets/Ativo 3.svg" alt="" />
               </Link>
             </NavbarBrand>
 
