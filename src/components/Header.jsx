@@ -31,7 +31,7 @@ export default function Header() {
           <Navbar className='transparent navbar-expand-md navbar-dark' color="faded" light>
             <NavbarBrand href="/" className="me-auto">
               <Link to="/">
-                <img className='w-170' src="https://gusttavolima.site/wp-content/themes/gusttavo-lima/assets/img/logo-GL.png" alt="" />
+                <img className='w-170' src="src/assets/Ativo 3.svg" alt="" />
               </Link>
             </NavbarBrand>
 
@@ -39,24 +39,24 @@ export default function Header() {
 
             <Collapse  isOpen={!collapsed} navbar>
               <Nav navbar className='w-full flex justify-around'>
-                <NavItem className='borderBottomAnimation'>
-                  <NavLink href="/">Inicio</NavLink>
+                <NavItem className='borderBottomAnimation '>
+                  <NavLink className='hover:text-white' href="/">Inicio</NavLink>
                 </NavItem>
 
                 <NavItem className='borderBottomAnimation'>
-                  <NavLink href="/sobre">Sobre </NavLink>
+                  <NavLink className='hover:text-white' href="/sobre">Sobre </NavLink>
+                </NavItem >
+
+                <NavItem className='borderBottomAnimation'>
+                  <NavLink className='hover:text-white' href="/discografia">Discografia </NavLink>
                 </NavItem>
 
                 <NavItem className='borderBottomAnimation'>
-                  <NavLink href="/discografia">Discografia </NavLink>
+                  <NavLink className='hover:text-white' href="/videos">Videos </NavLink>
                 </NavItem>
 
                 <NavItem className='borderBottomAnimation'>
-                  <NavLink href="/videos">Videos </NavLink>
-                </NavItem>
-
-                <NavItem className='borderBottomAnimation'>
-                  <NavLink href="https://onerpm.link/602547483084" target='_blank' >Onde Ouvir </NavLink>
+                  <NavLink className='hover:text-white' href="https://onerpm.link/602547483084" target='_blank' >Onde Ouvir </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

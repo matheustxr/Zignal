@@ -180,7 +180,7 @@
 }
 
 
-
+/*MODAL CONFIGS*/
 .lineTitle::after{
   display: block;
   content: '';
@@ -191,4 +191,26 @@
   bottom: 0;
   left: 0;
   top: 58px;
+}
+
+.btn-close {
+  background:  none;
+  margin-left: 0 !important;
+}
+.btn-close:after {
+  content: "\274C";
+  position: relative;
+  left: -3px;
+  top: -3px;
+}
+
+.modal-header{
+  border-bottom: var(--bs-modal-header-border-width) solid #828282;
+}
+
+/*ICON PLAY*/
+.play{
+  left: calc(50% - 20px);
+  top: calc(40%);
+  position: absolute;
 }
