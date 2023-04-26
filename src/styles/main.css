@@ -41,7 +41,7 @@
 /* BG TOM*/
 @media screen and (min-width: 768px) {
   .bgTom{
-    background-image: url('src/assets/imgTom1.webp');
+    background-image: url('../assets/imgTom1.webp');
     background-position: right;
     background-size: 30rem;
     background-repeat:no-repeat;
