@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/main.css';
+import logo from "../assets/Ativo-3.svg";
 
 /*ROUTER*/
 import {BrowserRouter as Router, Routes , Route, Link} from "react-router-dom" 
@@ -31,7 +32,7 @@ export default function Header() {
           <Navbar className='transparent navbar-expand-md navbar-dark' color="faded" light>
             <NavbarBrand href="/" className="me-auto">
               <Link to="/">
-                <img className='w-170' src="../src/assets/Ativo 3.svg" alt="" />
+                <img className='w-170' src={logo} alt="" />
               </Link>
             </NavbarBrand>
 
