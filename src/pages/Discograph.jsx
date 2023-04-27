@@ -246,7 +246,7 @@ function Discograph() {
     /*COISAS LINDAS*/
     {
       title: 'Uma Porção de Coisas Lindas',
-      capa: 'src/assets/albuns/capa-espiral.jpg',
+      capa: '../src/assets/albuns/capa-espiral.jpg',
       spotify: 'https://open.spotify.com/album/1QVmIVKcTONH0VsEIHxAZe',
       deezer: 'https://deezer.page.link/JrixTs98dcPhzVqG9',
       youtube: 'https://www.youtube.com/watch?v=bGrjJfXIuM8',
