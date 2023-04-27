@@ -4,6 +4,19 @@ import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  {faCirclePlay}  from "@fortawesome/free-solid-svg-icons";
 
+import vontade from "../assets/hqdefault.webp"
+
+import lual from "../assets/thumbs/lual-sem-lua.webp"
+import namorada from "../assets/thumbs/primeira-namorada.webp"
+import dez from "../assets/thumbs/dez-meia.webp"
+import esperanca from "../assets/thumbs/leito-esperança.webp"
+import rock from "../assets/thumbs/rock-escola.webp"
+import hoje from "../assets/thumbs/hoje-dia.webp"
+import reggae from "../assets/thumbs/reggae-horto.webp"
+import porcao from "../assets/thumbs/porcao-coisas.webp"
+import esperar from "../assets/thumbs/esperar.webp"
+
+
 
 export default function Videos() {
       {/*SOLO*/}
@@ -50,7 +63,7 @@ export default function Videos() {
             <div>
               <a className='cursor-pointer relative' onClick={() => setShowVontade(true)}>
                 <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/hqdefault.webp" alt="" />
+                    <img className='rounded' src={vontade} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
               </a>
@@ -84,7 +97,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowLual(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/lual-sem-lua.webp" alt="" />
+                    <img className='rounded' src={lual} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -114,7 +127,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowNamorada(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/primeira-namorada.webp" alt="" />
+                    <img className='rounded' src={namorada} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -145,7 +158,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowDez(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/dez-meia.webp" alt="" />
+                    <img className='rounded' src={dez} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -175,7 +188,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowEsperanca(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/leito-esperança.webp" alt="" />
+                    <img className='rounded' src={esperanca} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -205,7 +218,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowEscola(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/rock-escola.webp" alt="" />
+                    <img className='rounded' src={rock} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -235,7 +248,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowDia(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/hoje-dia.webp" alt="" />
+                    <img className='rounded' src={hoje} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -265,7 +278,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowHorto(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/reggae-horto.webp" alt="" />
+                    <img className='rounded' src={reggae} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -295,7 +308,7 @@ export default function Videos() {
               <div className='flex flex-col items-center'>
                 <a className='cursor-pointer relative' onClick={() => setShowPorcao(true)}>
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/porcao-coisas.webp" alt="" />
+                    <img className='rounded' src={porcao} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>
@@ -326,7 +339,7 @@ export default function Videos() {
                 <a className='cursor-pointer relative' onClick={() => setShowEsperar(true)}>
                   
                   <div className='w-336 h-188'>
-                    <img className='rounded' src="src/assets/thumbs/esperar.webp" alt="" />
+                    <img className='rounded' src={esperar} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
                 </a>

@@ -64,8 +64,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(65px);
+            transform: translateX(65px);
   }
 }
 
@@ -75,8 +75,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(65px);
+            transform: translateX(65px);
   }
 }
 
