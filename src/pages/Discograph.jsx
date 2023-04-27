@@ -1,10 +1,11 @@
 import React from 'react'
 import Particulas from '../components/Particles';
+import Albuns from '../components/Albuns';
 import $  from 'jquery';
-import capaEspiral from "../assets/albuns/capa-espiral.jpg"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDeezer, faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
+import { faDeezer, faSpotify, faYoutube, faApple, faAmazon } from "@fortawesome/free-brands-svg-icons";
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Discograph() {
   /*ANIMAÇÃO HOVER DESKTOP*/
@@ -86,7 +87,7 @@ function Discograph() {
       )
     });
 
-    /*VERDE*/
+    /*COMPAIXAO*/
     $(function(){
       $("#capaCompaixao").on('mouseenter',
         function(){
@@ -241,6 +242,79 @@ function Discograph() {
     });
   }
 
+  const disks = [
+    /*COISAS LINDAS*/
+    {
+      title: 'Uma Porção de Coisas Lindas',
+      capa: 'src/assets/albuns/capa-espiral.jpg',
+      spotify: 'https://open.spotify.com/album/1QVmIVKcTONH0VsEIHxAZe',
+      deezer: 'https://deezer.page.link/JrixTs98dcPhzVqG9',
+      youtube: 'https://www.youtube.com/watch?v=bGrjJfXIuM8',
+      appleMusic: 'https://music.apple.com/br/album/uma-por%C3%A7%C3%A3o-de-coisas-lindas/974025446?i=974025453',
+      id: 'capaEspiral',
+      over: 'over1'
+    },
+
+    /*METAMORFOSE*/
+    {
+      title: 'Metamorfose',
+      capa: 'src/assets/albuns/capa-camaleao.jpg',
+      spotify: 'https://open.spotify.com/album/1gMaQM9c2CZM9zruQvTM2Q',
+      deezer: 'https://deezer.page.link/y9iPu2DPHC5YBNdC9',
+      youtube: 'https://www.youtube.com/watch?v=txp6Ue1tNeU&list=PLJVmqcVRRPTA3NtNeOcBca9q35HlME9nx',
+      appleMusic: 'https://music.apple.com/br/album/metamorfose-ep/1025207862',
+      id: 'capaCamaleao',
+      over: 'over2'
+    },
+
+    /*KOMBI*/
+    {
+      title: 'Virado',
+      capa: 'src/assets/albuns/capa-kombi.jpg',
+      spotify: 'https://open.spotify.com/album/45vSc12RNeoz4GRuNZPpY5?si=6jkVKzofSqOZ0hiqKTf1Mw',
+      deezer: 'https://deezer.page.link/fWCb2En4KYBWuQ8v7',
+      youtube: 'https://www.youtube.com/watch?v=j1oo3ypD82U&list=PLJVmqcVRRPTAqG3VtHq6DCNyDfDdDGPFg',
+      appleMusic: 'https://music.apple.com/br/album/zignal-single/727500857',
+      id: 'capaKombi',
+      over: 'over3'
+    },
+    
+    /*VERDE*/
+    {
+      title: 'Zignal',
+      capa: 'src/assets/albuns/capa-verde.jpg',
+      spotify: 'https://open.spotify.com/album/45vSc12RNeoz4GRuNZPpY5?si=6jkVKzofSqOZ0hiqKTf1Mw',
+      deezer: 'https://deezer.page.link/fWCb2En4KYBWuQ8v7',
+      youtube: 'https://www.youtube.com/watch?v=iFe8G382vI4&list=OLAK5uy_mUpYu1KGrgGMFKqsPIjgY-dzr2Wp0LcQ0',
+      appleMusic: 'https://music.apple.com/br/album/zignal-single/727500857',
+      id: 'capaVerde',
+      over: 'over4'
+    },
+    
+    /*COM PAIXÃO*/
+    {
+      title: 'Abrace com Paixão',
+      capa: 'src/assets/albuns/capa-compaixao.jpg',
+      spotify: 'https://open.spotify.com/album/3eJM7WoGwrm1DooverXR0lBv?si=pTFJh2zsTH-Igmw6n_82Ig',
+      deezer: 'https://deezer.page.link/Yjo9zF2uCBjU4Dky9',
+      youtube: 'https://www.youtube.com/watch?v=_usgk2K7v0M&list=OLAK5uy_mfOZ0M-YtbYs0PHQKqMTh-cqQnYH8TmV4',
+      appleMusic: 'https://music.apple.com/br/album/abrace-com-paix%C3%A3o-single/987010763',
+      id: 'capaCompaixao',
+      over: 'over5'
+    },
+    
+    /*BANDA*/
+    {
+      title: 'Zignal',
+      capa: 'src/assets/albuns/capa-banda.jpg',
+      spotify: 'https://open.spotify.com/album/5jM0AKCc82yMUy7fNUAZ7C?si=vKJxuMkoRtuYvr_-YbP7-g',
+      deezer: 'https://deezer.page.link/UccdsnWpcaDnAqpQ8',
+      youtube: 'https://www.youtube.com/watch?v=keQpJL9Wy3c&list=OLAK5uy_lrOOViFCFJKNOyFBN0ABT0zb6VptHaSdI',
+      appleMusic: 'https://music.apple.com/br/album/zignal/428059182',
+      id: 'capaBanda',
+      over: 'over6'
+    },
+  ]
 
   return (
     <div className='relative z-20 top-0 w-full h-100% py-14 px-24  max-768:px-6 '>
@@ -248,198 +322,18 @@ function Discograph() {
       <iframe className='relative z-30 rounded' src="https://open.spotify.com/embed/artist/40NZXK16OeiuQJ5ONPzLAN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
       <div className=' relative flex flex-wrap justify-around gap-y-12 mt-5 max-768:flex-col max-768:items-center w-full '>
-        {/*ESPIRAL*/}
-        <div className='w-350 '>
-          <div id='capaEspiral'  >
-            <img className='w-300  absolute z-20 ' src={capaEspiral} alt="" />
-            <img id='vinil1' className='w-300 ' src="src/assets/vinil.png" alt="" />
-          </div>
-
-          <span  className='w-300 h-300  '>
-            <div id='over1' className=' absolute'>
-              <div  className="content">
-                <span className='text-base font-extrabold mb-2'>Uma Porção de Coisas Lindas</span>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faSpotify} size="lg" style={{color: "#ffffff",}} />
-                  Spotify
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faDeezer} size="lg" style={{color: "#ffffff",}} />
-                  Deezer
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faYoutube} size="lg" style={{color: "#ffffff",}} />
-                  Youtube
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-[3px] rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faApple} size="xl" style={{color: "#ffffff",}} />
-                  Apple Music
-                </a>
-              </div>
-            </div>
-          </span>
-        </div>
-
-        {/*CAMALEAO*/}
-        <div className='w-350 '>
-          <div id='capaCamaleao' >
-            <img className='w-300 absolute z-20 ' src="src/assets/albuns/capa-camaleao.jpg" alt="" />
-            <img id='vinil1' className='w-300 relative' src="src/assets/vinil.png" alt="" />
-          </div>
-
-          <span  className='w-300 h-300  '>
-            <div id='over2' className=' absolute '>
-              <div  className="content">
-                <span className='text-base font-extrabold mb-2'>Metamorfose</span>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faSpotify} size="lg" style={{color: "#ffffff",}} />
-                  Spotify
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faDeezer} size="lg" style={{color: "#ffffff",}} />
-                  Deezer
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faYoutube} size="lg" style={{color: "#ffffff",}} />
-                  Youtube
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-[3px] rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faApple} size="xl" style={{color: "#ffffff",}} />
-                  Apple Music
-                </a>
-              </div>
-            </div>
-          </span>
-        </div>
-
-        {/*KOKMBI*/}
-        <div className='w-350 '>
-          <div id='capaKombi' >
-            <img className='w-300 absolute z-20 ' src="src/assets/albuns/capa-kombi.jpg" alt="" />
-            <img id='vinil1' className='w-300 relative' src="src/assets/vinil.png" alt="" />
-          </div>
-
-          <span  className='w-300 h-300  '>
-            <div id='over3' className=' absolute'>
-              <div  className="content">
-                <span className='text-base font-extrabold mb-2'>Virado</span>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faSpotify} size="lg" style={{color: "#ffffff",}} />
-                  Spotify
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faDeezer} size="lg" style={{color: "#ffffff",}} />
-                  Deezer
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faYoutube} size="lg" style={{color: "#ffffff",}} />
-                  Youtube
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-[3px] rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faApple} size="xl" style={{color: "#ffffff",}} />
-                  Apple Music
-                </a>
-              </div>
-            </div>
-          </span>
-        </div>
-
-        {/*VERDE*/}
-        <div className='w-350 '>
-          <div id='capaVerde' >
-            <img className='w-300 absolute z-20 ' src="src/assets/albuns/capa-verde.jpg" alt="" />
-            <img id='vinil1' className='w-300 relative' src="src/assets/vinil.png" alt="" />
-          </div>
-
-          <span  className='w-300 h-300  '>
-            <div id='over4' className=' absolute'>
-              <div  className="content">
-                <span className='text-base font-extrabold mb-2'>Zignal</span>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faSpotify} size="lg" style={{color: "#ffffff",}} />
-                  Spotify
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faDeezer} size="lg" style={{color: "#ffffff",}} />
-                  Deezer
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faYoutube} size="lg" style={{color: "#ffffff",}} />
-                  Youtube
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-[3px] rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faApple} size="xl" style={{color: "#ffffff",}} />
-                  Apple Music
-                </a>
-              </div>
-            </div>
-          </span>
-        </div>
-
-        {/*COMPAIXAO*/}
-        <div className='w-350 '>
-          <div id='capaCompaixao' >
-            <img className='w-300 absolute z-20 ' src="src/assets/albuns/capa-compaixao.jpg" alt="" />
-            <img id='vinil1' className='w-300 relative' src="src/assets/vinil.png" alt="" />
-          </div>
-
-          <span  className='w-300 h-300  '>
-            <div id='over5' className=' absolute'>
-              <div  className="content">
-                <span className='text-base font-extrabold mb-2'>Abrace com Paixão</span>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faSpotify} size="lg" style={{color: "#ffffff",}} />
-                  Spotify
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faDeezer} size="lg" style={{color: "#ffffff",}} />
-                  Deezer
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faYoutube} size="lg" style={{color: "#ffffff",}} />
-                  Youtube
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-[3px] rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faApple} size="xl" style={{color: "#ffffff",}} />
-                  Apple Music
-                </a>
-              </div>
-            </div>
-          </span>
-        </div>
-
-        {/*BANDA*/}
-        <div className='w-350 '>
-          <div id='capaBanda' >
-            <img className='w-300 absolute z-20 ' src="src/assets/albuns/capa-banda.jpg" alt="" />
-            <img id='vinil1' className='w-300 relative' src="src/assets/vinil.png" alt="" />
-          </div>
-
-          <span  className='w-300 h-300  '>
-            <div id='over6' className=' absolute'>
-              <div  className="content">
-                <span className='text-base font-extrabold mb-2'>Zignal</span>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faSpotify} size="lg" style={{color: "#ffffff",}} />
-                  Spotify
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faDeezer} size="lg" style={{color: "#ffffff",}} />
-                  Deezer
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-1 rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faYoutube} size="lg" style={{color: "#ffffff",}} />
-                  Youtube
-                </a>
-                <a className='w-150 text-center text-sm border-2 border-white px-3 py-[3px] rounded hover:text-white' href="">
-                  <FontAwesomeIcon className='mr-2' icon={faApple} size="xl" style={{color: "#ffffff",}} />
-                  Apple Music
-                </a>
-              </div>
-            </div>
-          </span>
-        </div>
-
+       {disks.map((disk) => (
+        <Albuns
+          title= {disk.title}
+          capa= {disk.capa}
+          spotify= {disk.spotify}
+          deezer= {disk.deezer}
+          youtube= {disk.youtube}
+          appleMusic= {disk.appleMusic}
+          id={disk.id}
+          over= {disk.over}
+        />
+       ))}
       </div>
     </div>
   )
