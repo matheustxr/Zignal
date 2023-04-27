@@ -3,9 +3,7 @@ import Particulas from '../components/Particles';
 import Albuns from '../components/Albuns';
 import $  from 'jquery';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDeezer, faSpotify, faYoutube, faApple, faAmazon } from "@fortawesome/free-brands-svg-icons";
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import capaEsprial from "../assets/albuns/capa-espiral.jpg"
 
 function Discograph() {
   /*ANIMAÇÃO HOVER DESKTOP*/
@@ -246,7 +244,7 @@ function Discograph() {
     /*COISAS LINDAS*/
     {
       title: 'Uma Porção de Coisas Lindas',
-      capa: '../assets/albuns/capa-espiral.jpg',
+      capa: {capaEsprial},
       spotify: 'https://open.spotify.com/album/1QVmIVKcTONH0VsEIHxAZe',
       deezer: 'https://deezer.page.link/JrixTs98dcPhzVqG9',
       youtube: 'https://www.youtube.com/watch?v=bGrjJfXIuM8',
