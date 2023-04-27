@@ -4,6 +4,11 @@ import Albuns from '../components/Albuns';
 import $  from 'jquery';
 
 import capaEsprial from "../assets/albuns/capa-espiral.jpg"
+import capaCamaleao from "../assets/albuns/capa-camaleao.jpg"
+import capaKombi from "../assets/albuns/capa-kombi.jpg"
+import capaVerde from "../assets/albuns/capa-verde.jpg"
+import capaCompaixao from "../assets/albuns/capa-compaixao.jpg"
+import capaBanda from "../assets/albuns/capa-banda.jpg"
 
 function Discograph() {
   /*ANIMAÇÃO HOVER DESKTOP*/
@@ -244,7 +249,7 @@ function Discograph() {
     /*COISAS LINDAS*/
     {
       title: 'Uma Porção de Coisas Lindas',
-      capa: {capaEsprial},
+      capa: capaEsprial,
       spotify: 'https://open.spotify.com/album/1QVmIVKcTONH0VsEIHxAZe',
       deezer: 'https://deezer.page.link/JrixTs98dcPhzVqG9',
       youtube: 'https://www.youtube.com/watch?v=bGrjJfXIuM8',
@@ -256,7 +261,7 @@ function Discograph() {
     /*METAMORFOSE*/
     {
       title: 'Metamorfose',
-      capa: 'src/assets/albuns/capa-camaleao.jpg',
+      capa: capaCamaleao,
       spotify: 'https://open.spotify.com/album/1gMaQM9c2CZM9zruQvTM2Q',
       deezer: 'https://deezer.page.link/y9iPu2DPHC5YBNdC9',
       youtube: 'https://www.youtube.com/watch?v=txp6Ue1tNeU&list=PLJVmqcVRRPTA3NtNeOcBca9q35HlME9nx',
@@ -268,7 +273,7 @@ function Discograph() {
     /*KOMBI*/
     {
       title: 'Virado',
-      capa: 'src/assets/albuns/capa-kombi.jpg',
+      capa: capaKombi,
       spotify: 'https://open.spotify.com/album/45vSc12RNeoz4GRuNZPpY5?si=6jkVKzofSqOZ0hiqKTf1Mw',
       deezer: 'https://deezer.page.link/fWCb2En4KYBWuQ8v7',
       youtube: 'https://www.youtube.com/watch?v=j1oo3ypD82U&list=PLJVmqcVRRPTAqG3VtHq6DCNyDfDdDGPFg',
@@ -280,7 +285,7 @@ function Discograph() {
     /*VERDE*/
     {
       title: 'Zignal',
-      capa: 'src/assets/albuns/capa-verde.jpg',
+      capa: capaVerde,
       spotify: 'https://open.spotify.com/album/45vSc12RNeoz4GRuNZPpY5?si=6jkVKzofSqOZ0hiqKTf1Mw',
       deezer: 'https://deezer.page.link/fWCb2En4KYBWuQ8v7',
       youtube: 'https://www.youtube.com/watch?v=iFe8G382vI4&list=OLAK5uy_mUpYu1KGrgGMFKqsPIjgY-dzr2Wp0LcQ0',
@@ -292,7 +297,7 @@ function Discograph() {
     /*COM PAIXÃO*/
     {
       title: 'Abrace com Paixão',
-      capa: 'src/assets/albuns/capa-compaixao.jpg',
+      capa: capaCompaixao,
       spotify: 'https://open.spotify.com/album/3eJM7WoGwrm1DooverXR0lBv?si=pTFJh2zsTH-Igmw6n_82Ig',
       deezer: 'https://deezer.page.link/Yjo9zF2uCBjU4Dky9',
       youtube: 'https://www.youtube.com/watch?v=_usgk2K7v0M&list=OLAK5uy_mfOZ0M-YtbYs0PHQKqMTh-cqQnYH8TmV4',
@@ -304,7 +309,7 @@ function Discograph() {
     /*BANDA*/
     {
       title: 'Zignal',
-      capa: 'src/assets/albuns/capa-banda.jpg',
+      capa: capaBanda,
       spotify: 'https://open.spotify.com/album/5jM0AKCc82yMUy7fNUAZ7C?si=vKJxuMkoRtuYvr_-YbP7-g',
       deezer: 'https://deezer.page.link/UccdsnWpcaDnAqpQ8',
       youtube: 'https://www.youtube.com/watch?v=keQpJL9Wy3c&list=OLAK5uy_lrOOViFCFJKNOyFBN0ABT0zb6VptHaSdI',
