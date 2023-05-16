@@ -324,7 +324,7 @@ function Discograph() {
       <Particulas />
       <iframe className='relative z-30 rounded' src="https://open.spotify.com/embed/artist/40NZXK16OeiuQJ5ONPzLAN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-      <div className=' relative flex flex-wrap justify-around gap-y-12 mt-5 max-768:flex-col max-768:items-center w-full '>
+      <div className=' relative grid max-768:grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 justify-items-center gap-12 mt-5  w-full '>
        {disks.map((disk) => (
         <Albuns
           title= {disk.title}

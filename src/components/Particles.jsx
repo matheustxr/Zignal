@@ -42,7 +42,7 @@ export default function Particulas() {
                                     enable: false,
                                     mode: "repulse",
                                 },
-                                resize: true,
+                                resize: false,
                             },
                             modes: {
                                 push: {
@@ -59,10 +59,10 @@ export default function Particulas() {
                                 value: "#ffffff",
                             },
                             links: {
-                                color: "#001297",
+                                color: "#001eff",
                                 distance: 430,
                                 enable: true,
-                                opacity: 0.05,
+                                opacity: 0.1,
                                 width: 6,
                             },
                             collisions: {
@@ -81,9 +81,9 @@ export default function Particulas() {
                             number: {
                                 density: {
                                     enable: true,
-                                    area: 800,
+                                    area: 700,
                                 },
-                                value: 100,
+                                value: 60,
                             },
                             opacity: {
                                 value: 0.5,

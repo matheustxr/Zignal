@@ -91,7 +91,7 @@ export default function Videos() {
         {/*ZIGNAL*/}
         <div className='mt-12'>
           <h2 className='text-4xl my-3 lineTitle max-768:text-start'>Zignal</h2>
-          <div className='flex flex-wrap px-20 gap-y-12 mt-4 justify-around'>
+          <div className='grid max-768:grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 justify-items-center sm:gap-12 lg:gap-16'>
             {/*LUAL SEM LUA*/}
             <div >
               <div className='flex flex-col items-center'>
