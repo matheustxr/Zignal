@@ -39,13 +39,12 @@
 
 
 /* BG TOM*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .bgTom{
-    background-image: url('../assets/imgTom1.webp');
-    background-position: right;
-    background-size: 30rem;
-    background-repeat:no-repeat;
-    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: url('../assets/tomilustracao.webp') no-repeat top right fixed;
   }
 }
 

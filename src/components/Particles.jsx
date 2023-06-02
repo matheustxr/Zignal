@@ -81,7 +81,7 @@ export default function Particulas() {
                             number: {
                                 density: {
                                     enable: true,
-                                    area: 700,
+                                    area: 800,
                                 },
                                 value: 60,
                             },
