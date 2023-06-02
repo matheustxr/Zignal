@@ -59,7 +59,7 @@ export default function Videos() {
         {/*SOLO*/}
         <div>
           <h2 className='text-4xl my-3 lineTitle max-768:text-start'>Carreira Solo</h2>
-          <div className='flex flex-wrap px-28 gap-y-12 mt-4 justify-start max-768:justify-center '>
+          <div className='flex flex-wrap px-[34px] mt-4 justify-start max-768:justify-center '>
             <div>
               <a className='cursor-pointer relative' onClick={() => setShowVontade(true)}>
                 <div className='w-336 h-188'>
