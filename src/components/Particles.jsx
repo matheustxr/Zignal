@@ -28,7 +28,7 @@ export default function Particulas() {
                     {
                         background: {
                             color: {
-                                value: "#05031f",
+                                value: "#000",
                             },
                         },
                         fpsLimit: 120,
@@ -56,10 +56,10 @@ export default function Particulas() {
                         },
                         particles: {
                             color: {
-                                value: "#ffffff",
+                                value: "#e6332a",
                             },
                             links: {
-                                color: "#001eff",
+                                color: "#e6332a",
                                 distance: 430,
                                 enable: true,
                                 opacity: 0.1,

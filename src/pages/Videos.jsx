@@ -6,6 +6,8 @@ import  {faCirclePlay}  from "@fortawesome/free-solid-svg-icons";
 
 import vontade from "../assets/hqdefault.webp"
 
+import guitarra from "../assets/GuitarTom3.webp"
+
 import lual from "../assets/thumbs/lual-sem-lua.webp"
 import namorada from "../assets/thumbs/primeira-namorada.webp"
 import dez from "../assets/thumbs/dez-meia.webp"
@@ -59,14 +61,17 @@ export default function Videos() {
         {/*SOLO*/}
         <div>
           <h2 className='text-4xl my-3 lineTitle max-768:text-start'>Carreira Solo</h2>
-          <div className='flex flex-wrap px-[34px] mt-4 justify-start max-768:justify-center '>
-            <div>
+          <div className='flex flex-wrap  mt-4 justify-center max-768:justify-center '>
+            <div className='flex'>
+
+              <img src={guitarra} alt="" className='w-[400px]'/>
               <a className='cursor-pointer relative' onClick={() => setShowVontade(true)}>
                 <div className='w-336 h-188'>
                     <img className='rounded' src={vontade} alt="" />
                     <FontAwesomeIcon className='play z-30' icon={faCirclePlay} beat size="2xl" />
                   </div>
               </a>
+              <img src={guitarra} alt="" className='w-[400px] scale-x-[-1]'/>
 
               <Modal
                 size="lg"
